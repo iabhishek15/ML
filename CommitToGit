@@ -1,0 +1,50 @@
+//initilisating the git these 4 lines will help us to set up the git
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "you@youraddress.com"
+$ git config --global push.default matching
+$ git config --global alias.co checkout
+$ git init
+
+git add .    //{add everything from the current directory into git repository}
+
+git commit -am 'Initial commit'
+
+
+//with the above two line we have now saved the project from our working directory 
+to git repostiory into our computer now we want to save it on github online
+
+//we need to create an SSH key on our computer and then add it to our github account so that 
+our termial can connect securely
+
+//deactivate is used to deactivate the virtual server this is done using virtualenv 
+//I don't use virtual env
+
+
+
+//we will place this SSH key into new directory so we will use ~/ this is used for the 
+default directory /c/Users/158si/.ssh
+~/.ssh //now this .ssh will make this hidden
+{in my case this already exits but how??}
+
+//in the bash we can create key using ssh-keygen.exe
+
+mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen.exe
+
+//It ask where you wanna save it you can press enter and save there only
+
+dir
+//.pub we want
+
+cat id_rsa.pub
+
+//add on github is ssh key in settings
+
+git remote add origin https://github.com/iabhishek15/myProject.git
+git push -u origin master
+
+//when we want to do it again we just add above two line and just type git push
+git push
+
