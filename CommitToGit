@@ -45,6 +45,8 @@ cat id_rsa.pub
 git remote add origin https://github.com/iabhishek15/myProject.git
 git push -u origin master
 
-//when we want to do it again we just add above two line and just type git push
+//when we want to do it again we just add these three lines
+git add .    //{add everything from the current directory into git repository}
+git commit -am 'Initial commit'
 git push
 
